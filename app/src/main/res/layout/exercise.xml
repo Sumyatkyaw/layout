@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<Button
+    android:id="@+id/buttonA"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Button A"
+    android:layout_marginTop="30dp"
+    app:layout_constraintHorizontal_chainStyle="packed"
+    app:layout_constraintHorizontal_bias="0.2"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/buttonB"
+    app:layout_constraintLeft_toLeftOf="parent"/>
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button B"
+        app:layout_constraintLeft_toRightOf="@id/buttonA"
+        app:layout_constraintBaseline_toBaselineOf="@id/buttonA"
+        app:layout_constraintRight_toLeftOf="@id/buttonC"/>
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ButtonC"
+        app:layout_constraintLeft_toRightOf="@id/buttonB"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/buttonA"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

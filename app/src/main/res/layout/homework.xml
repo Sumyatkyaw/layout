@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/sakura"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@drawable/rectangle_background"
+        android:src="@drawable/sukara"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textTitle"
+        app:layout_constraintHorizontal_bias="0.3"/>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Poems of Osho"
+        android:textColor="#6495ed"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:background="@drawable/rectangle_text"
+        app:layout_constraintTop_toBottomOf="@id/sakura"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text"
+        android:layout_marginTop="30dp"/>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:text="If you love a flower,don't pick it up.Because if you pick it up it dies and it ceases to be what you love.So if you love a flower, let it be.Love is not about possession.Love is about appreciation."
+        android:textColor="#6495ed"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"
+        app:layout_constraintBottom_toTopOf="@id/price"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$17"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="#6495ed"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_button"
+        android:text="Order Now"
+        android:textColor="#fffaf0"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/price"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

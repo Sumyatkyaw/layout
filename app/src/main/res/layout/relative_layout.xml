@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button
+        android:id="@+id/butttonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button One"/>
+    <Button
+        android:id="@+id/buttonTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button Two"
+        android:layout_toRightOf="@id/butttonOne"/>
+    <Button
+        android:id="@+id/buttonThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button Three"
+        android:layout_toRightOf="@id/buttonTwo"/>
+    <Button
+        android:id="@+id/buttonFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button Four"
+        android:layout_below="@id/butttonOne"/>
+    <Button
+        android:id="@+id/buttonFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button Five"
+        android:layout_below="@id/buttonTwo"
+        android:layout_toRightOf="@+id/buttonFour"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button Six"
+        android:layout_below="@id/butttonOne"
+        android:layout_toRightOf="@id/buttonFive"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/buttonFour"/>
+
+
+</RelativeLayout>
